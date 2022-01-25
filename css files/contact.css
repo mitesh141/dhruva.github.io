@@ -1,55 +1,65 @@
-body{
-    background: -webkit-linear-gradient(left, #064491, #2595b4);
+* {
+    border: border-box;
+    border-color: #3995e0;
     
-}
-.contact-form{
-    background: #fff;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 70%;
+
+  }
+  body{
+    background-color: #3995e0
+  }
+ 
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
     border-radius: 20px;
-}
-.contact-form .form-control{
-    border-radius:1rem;
-}
-.contact-image{
-    text-align: center;
-}
-.contact-image img{
-    border-radius: 6rem;
-    width: 11%;
-    margin-top: -3%;
-    transform: rotate(29deg);
-}
-.contact-form form{
-    padding: 14%;
-}
-.contact-form form .row{
-    margin-bottom: -7%;
-}
-.contact-form h3{
-    margin-bottom: 8%;
-    margin-top: -10%;
-    text-align: center;
-    color: #205fa1;
-}
-.contact-form .btnContact {
-    width: 50%;
-    border: none;
-    border-radius: 1rem;
-    padding: 1.5%;
-    background: #dc3545;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-}
-.btnContactSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: #fff;
-    background-color: #0f4f92;
+    
+  }
+  
+  input[type=submit] {
+    background-color: #054981;
+    color: white;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
-}
+    border-radius: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #045faa;
+    border-radius: 20px;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
